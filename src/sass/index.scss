@@ -1,12 +1,12 @@
-@import './common';
-@import './mixins';
-@import './variables';
+@import './utils/common';
+@import './Utils/mixins';
+@import './Utils/variables';
 
-@import './hero_header';
-@import './products';
-@import './about';
-@import './advantages';
-@import './gallery';
-@import './customer_reviews';
-@import './contacts';
-@import './footer';
+@import './Main/hero_header';
+@import './Main/products';
+@import './Main/about';
+@import './Main/advantages';
+@import './Main/gallery';
+@import './Main/customer_reviews';
+@import './Main/contacts';
+@import './Main/footer';
