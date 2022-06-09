@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
-ul,
-ol,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,23 +26,9 @@ h6 {
     padding-top: 21px;
     padding-bottom: 120px;
   }
-
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @media screen and (min-width: 768px) {
-      padding-right: 32px;
-      padding-left: 32px;
-    }
-    @media screen and (min-width: 1280px) {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-  }
 }
 .advantages__list {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
   }
 }
@@ -62,12 +36,12 @@ h6 {
   display: block;
   &:not(:last-child) {
     margin-bottom: 32px;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-bottom: 0;
       margin-right: 4px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     &:first-child {
       margin-right: 142px;
     }
@@ -81,10 +55,10 @@ h6 {
     display: block;
     margin-bottom: 16px;
     background-repeat: no-repeat;
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-bottom: 36px;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop {
       margin-bottom: 40px;
     }
   }
@@ -110,48 +84,38 @@ h6 {
 
   font-family: 'Titan One';
   font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 41px;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  @include font(36px, 1.39, 400, 0.04);
 
   color: #d41443;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 13px;
     padding: 0;
-    font-size: 48px;
-    line-height: 55px;
+
+    @include font(48px, 1.15);
   }
-  @media screen and (min-width: 1280px) {
+
+  @include desktop {
     margin-bottom: 16px;
-    font-size: 58px;
-    line-height: 66px;
+    @include font(58px, 1.14);
   }
 }
 
 .advantages__text {
   max-width: 230px;
 
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 170%;
-  /* or 20px */
-
+  @include font(12px, 1.7, 700);
   color: #000000;
 
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.74;
+  @include tablet {
     max-width: 159px;
+    @include font(14px, 1.74);
   }
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 1.76;
-    letter-spacing: 0.02em;
+
+  @include desktop {
     max-width: 288px;
+    @include font(16px, 1.76, null, 0.02);
   }
 }
