@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+}
+.header__logo {
+  margin-top: 8px;
+}
+.header-nav {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+.header__btn {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+.menu-btn {
+  background-color: transparent;
+  border: none;
+}
+.menu-btn__icon {
+  fill: #d41443;
+}
