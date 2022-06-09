@@ -1,1 +1,22 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    @include mobile {
+        padding: 0px 20px;
+        max-width: 767px;
+    }
+
+    @include tablet {
+        padding: 0px 32px;
+        max-width: 768px;
+    }
+
+    @include desktop {
+        padding: 0px 16px;
+        max-width: 1280px;
+    }
+}
