@@ -441,6 +441,7 @@ h6 {
   .advantages__text {
     font-size: 14px;
     line-height: 1.74;
+    max-width: 159px;
   }
 }
 
@@ -449,6 +450,7 @@ h6 {
     font-size: 16px;
     line-height: 1.76;
     letter-spacing: 0.02em;
+    max-width: 288px;
   }
 }
 /*# sourceMappingURL=index.css.map */

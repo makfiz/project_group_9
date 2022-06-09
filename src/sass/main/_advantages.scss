@@ -146,10 +146,12 @@ h6 {
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.74;
+    max-width: 159px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.76;
     letter-spacing: 0.02em;
+    max-width: 288px;
   }
 }
