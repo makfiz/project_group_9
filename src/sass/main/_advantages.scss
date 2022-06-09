@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: #fff5f6;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 21px;
+    padding-bottom: 120px;
+  }
+}
+.advantages__list {
+  @include tablet {
+    display: flex;
+  }
+}
+.advantages__item {
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+    @include tablet {
+      margin-bottom: 0;
+      margin-right: 4px;
+    }
+  }
+  @include desktop {
+    &:first-child {
+      margin-right: 142px;
+    }
+    &:nth-child(2) {
+      margin-right: 106px;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    @include tablet {
+      margin-bottom: 36px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  &:first-child::before {
+    width: 33px;
+    height: 50px;
+    background-image: url(../images/advantages/advantages-icon-milk.svg);
+  }
+  &:nth-child(2)::before {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/advantages-icon-bucket.svg);
+  }
+  &:last-child::before {
+    width: 44px;
+    height: 50px;
+    background-image: url(../images/advantages/advantages-icon-heart.svg);
+  }
+}
+.advantages__title {
+  padding-bottom: 15px;
+
+  font-family: 'Titan One';
+  font-style: normal;
+  text-transform: uppercase;
+
+  @include font(36px, 1.39, 400, 0.04);
+
+  color: #d41443;
+
+  @include tablet {
+    margin-bottom: 13px;
+    padding: 0;
+
+    @include font(48px, 1.15);
+  }
+
+  @include desktop {
+    margin-bottom: 16px;
+    @include font(58px, 1.14);
+  }
+}
+
+.advantages__text {
+  max-width: 230px;
+
+  @include font(12px, 1.7, 700);
+  color: #000000;
+
+  @include tablet {
+    max-width: 159px;
+    @include font(14px, 1.74);
+  }
+
+  @include desktop {
+    max-width: 288px;
+    @include font(16px, 1.76, null, 0.02);
+  }
+}
