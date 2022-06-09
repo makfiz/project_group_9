@@ -94,24 +94,24 @@
     margin-bottom: 13px;
     padding: 0;
 
-    @include font(48px, 1.15);
+    @include font(48px, 1.15, null, null);
   }
 
   @include desktop {
     margin-bottom: 16px;
-    @include font(58px, 1.14);
+    @include font(58px, 1.14, null, null);
   }
 }
 
 .advantages__text {
   max-width: 230px;
 
-  @include font(12px, 1.7, 700);
+  @include font(12px, 1.7, 700, null);
   color: #000000;
 
   @include tablet {
     max-width: 159px;
-    @include font(14px, 1.74);
+    @include font(14px, 1.74, null, null);
   }
 
   @include desktop {
