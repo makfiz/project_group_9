@@ -2,8 +2,15 @@ footer {
     background-color: #FFF5F6;
 }
 
-.footer__social-link{
+
+.footer__social-links{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__social-link{
+    &+& {margin-left: 25px;}
+    
 }
 
 .footer__link-icon{
@@ -12,3 +19,11 @@ footer {
     fill: #fea5bb;
 }
 
+
+
+.footer__copyright {
+    border-top: 1px solid #E1E1E1;
+    padding: 8px;
+    text-align: center;
+    
+}
