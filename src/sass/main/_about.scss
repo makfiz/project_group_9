@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
+
+
+.about{
+    background-color: #FFF5F6;
+    padding-top: 40px;
+
+    @include tablet {
+        padding-top: 20px;
+    }
+  
+}
+
+.about__subtitle{
+    font-family: Titan One, sans-serif;
+    @include font (18px, 1.17, 400, 0);
+    color: #FFA5BA;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @include tablet {
+            @include font (26px, 1.15, 400, 0);
+        }
+}
+
+.about__title {
+    font-family: Titan One, sans-serif;
+    @include font (34px, 1.15, 400, 0);
+    color: #D41443;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include tablet {
+            @include font (48px, 1.15, 400, 0);
+        }
+}
+
+
+.about__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.about__textwrap{
+    background-image: url(../images/about/about_back_mob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 40px;
+
+   
+         
+}
+
+.about__top-text {
+    @include font (12px, 1.58, 500, 0);
+    color: #000000;
+    margin-bottom: 20px;
+    min-width: 220px;
+
+}
+
+.about__text {
+    @include font (12px, 1.58, 500, 0);
+    color: #907E82;
+    margin-bottom: 20px;
+    min-width: 220px;
+    
+}
+
+.about__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    min-height: 44px;
+    
+    @include font(14px, 1.29, 700, null);
+    
+    
+}
+
+.about-btn__icon {
+    margin-left: 13px;
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+}
