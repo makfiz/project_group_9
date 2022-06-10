@@ -1,23 +1,27 @@
 .hero-header {
   background-color: #ffb8ca;
-  max-width: 320px;
 }
 .header {
   display: flex;
+  padding-top: 8px;
+  @include tablet {
+    padding-top: 32px;
+  }
 }
-.header__logo {
-  margin-top: 8px;
-}
+
 .header-nav {
   display: none;
   @include desktop {
     display: block;
   }
 }
-.header-btn {
+.header__btn {
   display: none;
+  height: 44px;
   @include tablet {
     display: block;
+    width: 160px;
+    margin-left: 32px;
   }
 }
 .menu-btn {
@@ -28,30 +32,37 @@
   padding: 0;
 }
 .menu-btn__icon {
-  fill: #d41443;
+  fill: $red;
 }
 // -----------------------hero----------------------
 .hero {
   position: relative;
   padding-top: 136px;
   padding-bottom: 158px;
+  @include tablet {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
-.hero__main {
+.hero-main {
   z-index: 1;
   position: relative;
 }
-.hero__title {
+.hero-main__title {
   font-family: 'Titan One';
   @include font(36px, 1.15, 400, 0.04);
   max-width: 218px;
-  color: #ffffff;
+  color: $white;
+  @include tablet {
+    margin-top: 4px;
+  }
 }
-.hero .hero__title--red {
+.hero .hero-main__title--red {
   @include font(48px, 0.95, none, none);
-  color: #d41443;
+  color: $red;
 }
 .hero-nav {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .hero-nav__list {
   display: flex;
@@ -65,14 +76,14 @@
   height: 24px;
   &:first-child {
     margin-right: 10px;
-    background-color: #d41443;
+    background-color: $red;
     width: 62px;
-    color: #fff;
+    color: $white;
   }
   &:last-child {
-    background-color: #fff;
+    background-color: $white;
     width: 83px;
-    color: #d41443;
+    color: $red;
   }
 }
 .hero-nav__link {
@@ -80,17 +91,28 @@
   color: inherit;
 }
 
-.hero-img {
+.hero__main-img {
   position: absolute;
   bottom: 0;
   right: 12px;
+  @include tablet {
+    right: 271px;
+  }
 }
 
-.hero__aside {
+.hero-aside {
   display: none;
   @include tablet {
-    display: block;
+    display: flex;
+    margin-top: 20px;
   }
+}
+.hero-aside__text {
+  padding-top: 41px;
+  padding-bottom: 65px;
+  max-width: 114px;
+  color: $white;
+  @include font(8px, 1.5, 400, none);
 }
 .hero-content {
   display: none;
@@ -102,5 +124,8 @@
   display: none;
   @include tablet {
     display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
   }
 }

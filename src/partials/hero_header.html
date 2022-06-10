@@ -13,7 +13,6 @@
         <a href="" class="header-nav__link" id="our-products">Our products</a>
         <a href="" class="header-nav__link" id="Contact">Contact</a>
       </nav>
-      <button type="button" class="header-btn">Buy now</button>
       <button type="button" class="menu-btn">
         <img
           src="./images/hero-header/Burger.png"
@@ -21,12 +20,13 @@
           width="24"
         />
       </button>
+      <button type="button" class="btn header__btn btn--red">Buy now &nbsp&nbsp;&#62</button>
     </div>
     <div class="hero">
-      <div class="hero__main">
-        <h1 class="hero__title">
+      <div class="hero-main">
+        <h1 class="hero-main__title">
           ice cream made with
-          <span class="hero__title--red">passion</span>
+          <span class="hero-main__title--red">passion</span>
         </h1>
         <nav class="hero-nav">
           <ul class="hero-nav__list">
@@ -41,80 +41,102 @@
           </ul>
         </nav>
       </div>
-      <div class="hero__aside">
-        <!-- <picture>
+      <div class="hero-aside">
+         <picture>
           <source
-            scrset="./images/hero-header/bio-eco-desk@1.png 1x, 
-            ./images/hero-header/bio-eco-desk@2.png 2x"
             media="(min-width:1280px)"
+            srcset="
+              ./images/hero-header/bio-eco/bio-eco-desk@1.webp 1x,
+              ./images/hero-header/bio-eco/bio-eco-desk@2.webp 2x
+            "
+            type="image/webp"
           />
           <source
-            scrset="./images/hero-header/bio-eco-tab@1.png 1x, ./images/hero-header/bio-eco-tab@2.png 2x"
+            media="(min-width:1280px)"
+            srcset="
+              ./images/hero-header/bio-eco/bio-eco-desk@1.png 1x,
+              ./images/hero-header/bio-eco/bio-eco-desk@2.png 2x
+            "
+            type="image/png"
+          />
+          <source
             media="(min-width:768px)"
+            srcset="
+              ./images/hero-header/bio-eco/bio-eco-tab@1.webp 1x,
+              ./images/hero-header/bio-eco/bio-eco-tab@2.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./images/hero-header/bio-eco/bio-eco-tab@1.png 1x,
+              ./images/hero-header/bio-eco/bio-eco-tab@2.png 2x
+            "
+            type="image/png"
           />
           <img
-            src="./images/hero-header/bio-eco-desk@1.png"
-            alt="picture icecreem"
+            src="./images/hero-header/bio-eco/bio-eco-desk@1.png"
+            alt="icecreem"
           />
-        </picture> -->
-        <p class="hero__text">
+        </picture>
+        <p class="hero-aside__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <ion-icon name="arrow-forward-outline"></ion-icon>
       </div>
-      <div class="hero-img">
-        <picture class="hero-img__isecream">
+      <div class="hero__main-img">
+        <picture>
           <source
             media="(min-width:1280px)"
             srcset="
-              ./images/hero-header/icecream/desktop/icecream-desk@1.webp 1x,
-              ./images/hero-header/icecream/desktop/icecream-desk@2.webp 2x
+              ./images/hero-header/icecream/icecream-desk@1.webp 1x,
+              ./images/hero-header/icecream/icecream-desk@2.webp 2x
             "
             type="image/webp"
           />
           <source
             media="(min-width:1280px)"
             srcset="
-              ./images/hero-header/icecream/desktop/icecream-desk@1.png 1x,
-              ./images/hero-header/icecream/desktop/icecream-desk@2.png 2x
+              ./images/hero-header/icecream/icecream-desk@1.png 1x,
+              ./images/hero-header/icecream/icecream-desk@2.png 2x
             "
             type="image/png"
           />
           <source
             media="(min-width:768px)"
             srcset="
-              ./images/hero-header/icecream/tablet/icecream-tab@1.webp 1x,
-              ./images/hero-header/icecream/tablet/icecream-tab@2.webp 2x
+              ./images/hero-header/icecream/icecream-tab@1.webp 1x,
+              ./images/hero-header/icecream/icecream-tab@2.webp 2x
             "
             type="image/webp"
           />
           <source
             media="(min-width:768px)"
             srcset="
-              ./images/hero-header/icecream/tablet/icecream-tab@1.png 1x,
-              ./images/hero-header/icecream/tablet/icecream-tab@2.png 2x
+              ./images/hero-header/icecream/icecream-tab@1.png 1x,
+              ./images/hero-header/icecream/icecream-tab@2.png 2x
             "
             type="image/png"
           />
           <source
             media="(max-width:767px)"
             srcset="
-              ./images/hero-header/icecream/mobile/icecream-mob@1.webp 1x,
-              ./images/hero-header/icecream/mobile/icecream-mob@2.webp 2x
+              ./images/hero-header/icecream/icecream-mob@1.webp 1x,
+              ./images/hero-header/icecream/icecream-mob@2.webp 2x
             "
             type="image/webp"
           />
           <source
             media="(max-width:767px)"
             srcset="
-              ./images/hero-header/icecream/mobile/icecream-mob@1.png 1x,
-              ./images/hero-header/icecream/mobile/icecream-mob@2.png 2x
+              ./images/hero-header/icecream/icecream-mob@1.png 1x,
+              ./images/hero-header/icecream/icecream-mob@2.png 2x
             "
             type="image/png"
           />
           <img
-            src="./images/hero-header/icecream/desktop/icecream-desk@1.png"
+            src="./images/hero-header/icecream/icecream-desk@1.png"
             alt="icecreem"
           />
         </picture>
@@ -132,20 +154,44 @@
         </ul>
       </div>
       <div class="hero__aside-img">
-        <!-- <picture>
+         <picture>
           <source
-            scrset="./images/hero-header/tasty-desk@1.png 1x, ./images/hero-header/tasty-desk@2.png 2x"
             media="(min-width:1280px)"
+            srcset="
+              ./images/hero-header/tasty/tasty-desk@1.webp 1x,
+              ./images/hero-header/tasty/tasty-desk@2.webp 2x
+            "
+            type="image/webp"
           />
           <source
-            scrset="./images/hero-header/tasty-tab@1.png 1x, ./images/hero-header/tasty-tab@2.png 2x"
+            media="(min-width:1280px)"
+            srcset="
+              ./images/hero-header/tasty/tasty-desk@1.png 1x,
+              ./images/hero-header/tasty/tasty-desk@2.png 2x
+            "
+            type="image/png"
+          />
+          <source
             media="(min-width:768px)"
+            srcset="
+              ./images/hero-header/tasty/tasty-tab@1.webp 1x,
+              ./images/hero-header/tasty/tasty-tab@2.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./images/hero-header/tasty/tasty-tab@1.png 1x,
+              ./images/hero-header/tasty/tasty-tab@2.png 2x
+            "
+            type="image/png"
           />
           <img
-            src="./images/hero-header/tasty-desk@1.png"
-            alt="content picture"
+            src="./images/hero-header/tasty/tasty-desk@1.png"
+            alt="icecreem"
           />
-        </picture> -->
+        </picture>
       </div>
     </div>
   </div>
