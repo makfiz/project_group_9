@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
+
+.prod {
+    margin: 80px auto 148px auto;
+    text-align: center;
+    font-family: 'Titan One', sans-serif;
+    text-transform: uppercase;
+
+    @include tablet {
+        margin: 45px auto 128px auto;
+    }
+
+    @include desktop {
+        margin: 59px auto 198px auto;
+    }
+}
+
+.prod__text {
+    @include font (18px, 1.17, 400, 0);
+    color: #FFA5BA;
+    margin-bottom: 15px;
+
+    @include tablet {
+        @include font (26px, 1.15, 400, 0);
+        margin-bottom: 18px;
+    }
+
+    @include desktop {
+        @include font (30px, 1.13, 400, 0.04);
+        margin-bottom: 16px;
+    }
+}
+
+.prod__title {
+    @include font (34px, 1.15, 400, 0.04);
+    color: #D41443;
+
+    @include tablet {
+        @include font (48px, 1.15, 400, 0.04);
+    }
+
+    @include desktop {
+        @include font (58px, 1.14, 400, 0.06);
+    }
+}
+
+.products {
+    width: 100%;
+    height: 489px;
+    border-radius: 24px;
+    color: #ffff;
+    position: relative;
+
+    &:first-child {
+        background-color: #ffb8ca;
+
+        @media screen and (max-width:767px) {
+            margin-bottom: 140px;
+        }
+
+    }
+
+    &:nth-child(2) {
+        background-color: #f0d1a5;
+
+        @media screen and (max-width:767px) {
+            margin-bottom: 140px;
+        }
+    }
+
+    &:last-child {
+        background-color: #c2e297;
+
+        @media screen and (max-width:767px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    @include tablet {
+        width: calc(100% / 3 - 11px);
+        height: 473px;
+        display: inline-block;
+        margin-bottom: 60px;
+
+        &:not(:last-child) {
+            margin-right: 11px;
+        }
+    }
+
+    @include desktop {
+        width: calc(100% / 12 * 4 - 21px);
+        height: 535px;
+        display: inline-block;
+        margin-bottom: 60px;
+
+        &:not(:last-child) {
+            margin-right: 26px;
+        }
+
+    }
+
+    &:nth-child(1):before {
+        content: '';
+        background-image: url(../images/products/home-pic.png);
+        background-size: 280px 280px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: url(../images/products/home-pic-2x.png);
+        }
+
+        @include tablet {
+            background-size: 224px 224px;
+            width: 224px;
+            height: 224px;
+        }
+
+        @include desktop {
+            background-size: 394px 394px;
+            width: 394px;
+            height: 394px;
+        }
+    }
+
+    &:nth-child(2):before {
+        content: '';
+        background-image: url(../images/products/home-pic1.png);
+        background-size: 280px 280px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: url(../images/products/home-pic1-2x.png);
+        }
+
+        @include tablet {
+            background-size: 224px 224px;
+            width: 224px;
+            height: 224px;
+        }
+
+        @include desktop {
+            background-size: 394px 394px;
+            width: 394px;
+            height: 394px;
+        }
+    }
+
+    &:nth-child(3):before {
+        content: '';
+        background-image: url(../images/products/home-pic2.png);
+        background-size: 280px 280px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: url(../images/products/home-pic2-2x.png);
+        }
+
+        @include tablet {
+            background-size: 224px 224px;
+            width: 224px;
+            height: 224px;
+        }
+
+        @include desktop {
+            background-size: 394px 394px;
+            width: 394px;
+            height: 394px;
+        }
+    }
+}
+
+.products__title {
+    font-family: 'Titan One', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    @include font (20px, 1.15, 400, 0.04);
+    padding-top: 160px;
+    padding-bottom: 70px;
+    position: relative;
+
+    @include tablet {
+        padding-top: 144px;
+    }
+
+    @include desktop {
+        @include font (30px, 1.13, 400, 0.04);
+        padding-top: 224px;
+    }
+
+    &::after {
+        content: '...';
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include tablet {
+            top: 82%;
+        }
+
+        @include desktop {
+            top: 87%;
+        }
+    }
+}
+
+.products__text {
+    text-align: center;
+    @include font (14px, 1.5, 700, 0.04);
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include tablet {
+        @include font (14px, 1.78, 700, 0.04);
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @include desktop {
+        @include font (16px, 1.76, 700, 0.04);
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
+
+.products__button {
+    border: none;
+    border-radius: 50%;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffff;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/products/arrow-right.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    @include tablet {
+        top: 92%;
+    }
+
+    @include desktop {
+        top: 93%;
+    }
+
+
+}
