@@ -98,6 +98,102 @@
         }
 
     }
+
+    &:nth-child(1):before {
+        content: '';
+        background-image: url(../images/products/home-pic.png);
+        background-size: 280px 280px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: url(../images/products/home-pic-2x.png);
+        }
+
+        @include tablet {
+            background-size: 224px 224px;
+            width: 224px;
+            height: 224px;
+        }
+
+        @include desktop {
+            background-size: 394px 394px;
+            width: 394px;
+            height: 394px;
+        }
+    }
+
+    &:nth-child(2):before {
+        content: '';
+        background-image: url(../images/products/home-pic1.png);
+        background-size: 280px 280px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: url(../images/products/home-pic1-2x.png);
+        }
+
+        @include tablet {
+            background-size: 224px 224px;
+            width: 224px;
+            height: 224px;
+        }
+
+        @include desktop {
+            background-size: 394px 394px;
+            width: 394px;
+            height: 394px;
+        }
+    }
+
+    &:nth-child(3):before {
+        content: '';
+        background-image: url(../images/products/home-pic2.png);
+        background-size: 280px 280px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: url(../images/products/home-pic2-2x.png);
+        }
+
+        @include tablet {
+            background-size: 224px 224px;
+            width: 224px;
+            height: 224px;
+        }
+
+        @include desktop {
+            background-size: 394px 394px;
+            width: 394px;
+            height: 394px;
+        }
+    }
 }
 
 .products__title {
@@ -116,84 +212,6 @@
     @include desktop {
         @include font (30px, 1.13, 400, 0.04);
         padding-top: 224px;
-    }
-
-    &.first::before {
-        content: '';
-        background-image: url(../images/products/home-pic.png);
-        background-size: 280px 280px;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 280px;
-        height: 280px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        @include tablet {
-            background-size: 224px 224px;
-            width: 224px;
-            height: 224px;
-        }
-
-        @include desktop {
-            background-size: 394px 394px;
-            width: 394px;
-            height: 394px;
-        }
-    }
-
-    &.second::before {
-        content: '';
-        background-image: url(../images/products/home-pic1.png);
-        background-size: 280px 280px;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 280px;
-        height: 280px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        @include tablet {
-            background-size: 224px 224px;
-            width: 224px;
-            height: 224px;
-        }
-
-        @include desktop {
-            background-size: 394px 394px;
-            width: 394px;
-            height: 394px;
-        }
-    }
-
-    &.third::before {
-        content: '';
-        background-image: url(../images/products/home-pic2.png);
-        background-size: 280px 280px;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 280px;
-        height: 280px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        @include tablet {
-            background-size: 224px 224px;
-            width: 224px;
-            height: 224px;
-        }
-
-        @include desktop {
-            background-size: 394px 394px;
-            width: 394px;
-            height: 394px;
-        }
     }
 
     &::after {
