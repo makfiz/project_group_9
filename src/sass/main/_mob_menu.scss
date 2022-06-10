@@ -1,0 +1,13 @@
+.mob-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #E17992;
+    width: calc(100%/12*8);
+    height: 100%;
+}
+
+
+.mob-menu-nav {
+    display: flex;
+    flex-direction: column;
+}
