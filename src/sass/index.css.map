@@ -16,7 +16,8 @@
         "main/_gallery.scss",
         "main/_customer_reviews.scss",
         "main/_contacts.scss",
-        "main/_footer.scss"
+        "main/_footer.scss",
+        "main/_modal.scss"
     ],
     "names": [],
     "file": "index.css"
