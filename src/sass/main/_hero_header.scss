@@ -1,5 +1,6 @@
 .hero-header {
   background-color: #ffb8ca;
+  max-width: 320px;
 }
 .header {
   display: flex;
@@ -82,7 +83,7 @@
 .hero-img {
   position: absolute;
   bottom: 0;
-  right: 32px;
+  right: 12px;
 }
 
 .hero__aside {
