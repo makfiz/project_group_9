@@ -1,13 +1,53 @@
 .mob-menu {
-    display: flex;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    min-height: 100vh;
+    padding: 20px;
+    display: none;
     flex-direction: column;
     background-color: #E17992;
-    width: calc(100%/12*8);
-    height: 100%;
+    z-index: 1;
+
+    @include mobile {
+        width: 254px;
+    }
+
+    @include tablet {
+        width: calc(35%);
+    }
+    
+    @include desktop {
+        display: none;
+    }
+    
+
 }
 
+.is-open {
+    display: block;
+}
+
+.mob-menu__btn {
+    display: flex;
+
+    .mob-menu:first-child {
+        background-color: #E17992;
+    }
+    
+}
+
+.mob-menu__icon {
+    fill: black
+}
 
 .mob-menu-nav {
     display: flex;
     flex-direction: column;
+
+    a {}
+
+    a + a {
+        margin-top: 23px;
+    }
 }
