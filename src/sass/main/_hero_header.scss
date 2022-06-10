@@ -1,0 +1,155 @@
+.hero-header {
+  background-color: #ffb8ca;
+  display: block;
+  position: relative;
+}
+.header {
+  display: flex;
+  padding-top: 8px;
+  @include tablet {
+    padding-top: 32px;
+  }
+}
+
+.header-nav {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+.header__btn {
+  display: none;
+  height: 44px;
+  @include tablet {
+    display: block;
+    width: 160px;
+    margin-left: 32px;
+  }
+}
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+
+  padding: 0;
+}
+.menu-btn__icon {
+  fill: $red;
+}
+// -----------------------hero----------------------
+.hero {
+  // position: relative;
+  padding-top: 136px;
+  padding-bottom: 158px;
+  @include tablet {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+.hero__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-main {
+  z-index: 1;
+  position: relative;
+}
+.hero-main__title {
+  font-family: 'Titan One';
+  @include font(26px, 1.15, 400, 0.04);
+  max-width: 218px;
+  color: $white;
+  @include tablet {
+    margin-top: 4px;
+    max-width: 162px;
+    @include font(22px, 1.13, none, none);
+  }
+}
+.hero .hero-main__title--red {
+  @include font(48px, 0.95, none, none);
+  color: $red;
+  @include tablet {
+    @include font(34px, 0.91, none, none);
+  }
+}
+.hero-nav {
+  padding-top: 20px;
+}
+.hero-nav__list {
+  display: flex;
+}
+.hero-nav__item {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 24px;
+  &:first-child {
+    margin-right: 10px;
+    background-color: $red;
+    width: 62px;
+    color: $white;
+  }
+  &:last-child {
+    background-color: $white;
+    width: 83px;
+    color: $red;
+  }
+}
+.hero-nav__link {
+  @include font(8px, 1.25, 400, none);
+  color: inherit;
+}
+.hero-content__list {
+  margin-top: -8px;
+}
+.hero-content__item {
+  text-align: right;
+}
+.hero-content__title {
+  @include font(28px, 1.14, 400, 0.04);
+  color: $red;
+}
+.hero-content__text {
+  @include font(8px, 1.25, 400, none);
+  color: $white;
+}
+.hero__main-img {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  @include tablet {
+    right: 271px;
+  }
+}
+
+.hero-aside {
+  display: none;
+  @include tablet {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+.hero-aside__text {
+  padding-top: 41px;
+  padding-bottom: 65px;
+  max-width: 114px;
+  color: $white;
+  @include font(8px, 1.5, 400, none);
+}
+.hero-content {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+.hero__aside-img {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+  }
+}
