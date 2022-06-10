@@ -1,11 +1,92 @@
 footer {
+    position: relative;
     background-color: #FFF5F6;
+
+    &::after {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: 78px;
+        border-top: 1px solid #E1E1E1;
+
+        @include tablet {
+           bottom: 38px;
+        }
+    }
+
+
+}
+
+.footer__item {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+    }
+
+}
+
+
+.footer__title {
+    font-family: 'Titan One';
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    @include tablet {
+        max-width: 340px;
+        margin-bottom:0px
+    }
+
+    @include desktop {
+        max-width: none;
+        margin-bottom: 0px
+    }
+
+
+    .foter__title--low {
+        color: #FFA5BA;
+        @include font(18px, 1.16, 400, 0.04em);
+
+        @include tablet {
+                @include font(26px, 1.15, null, null);
+        }
+
+        @include desktop {
+                @include font(30px, 1.16, null, null);
+        }
+    }
+
+    .foter__title--large {
+        color: #D41443;
+        @include font(34px, 1.14, 400, 0.04em);
+
+        @include tablet {
+                @include font(48px, null, null, 0.06em);
+            }
+
+        @include desktop {
+                @include font(58px, 1.13, null, 0.06em);
+        }
+    }
+
+        .foter__title--low + .foter__title--large {
+            margin-top: 16px;
+
+            @include tablet {
+                margin-top: 12px;
+            }
+        }
 }
 
 
 .footer__social-links{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    
 }
 
 .footer__social-link{
@@ -25,11 +106,61 @@ footer {
     }
 }
 
+.footer__contacts {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
 
+    @include desktop {
+        margin-bottom: 0px;
+    }
+
+    p,a {
+        @include font(12px, 186%, 700, 0.02em);
+
+        @include tablet {
+                @include font(14px, null, null, null);
+            }
+
+        @include desktop {
+                @include font(16px, null, null, null);
+        }
+    }
+    
+
+    p{
+        color: #000000;
+        margin-right: 6px;
+    }
+
+    a{
+        color: #D41443;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,&:focus {
+            color: #FFA5BA;
+        }
+    }
+}
 
 .footer__copyright {
-    border-top: 1px solid #E1E1E1;
-    padding: 8px;
+    color: #907E82;
+    padding-top: 16px;
+    padding-bottom: 20px;
     text-align: center;
+    @include font(14px, 152%, 700, null);
+
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            padding: 8px 0px;
+            p + p {
+                margin-left: 4px;
+            }
+        }
+    
+        @include desktop {
+            justify-content: center;
+            display: flex;
+        }
     
 }
