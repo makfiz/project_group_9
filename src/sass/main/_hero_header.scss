@@ -109,9 +109,11 @@
 }
 .hero-content__title {
   @include font(28px, 1.14, 400, 0.04);
+  color: $red;
 }
 .hero-content__text {
   @include font(8px, 1.25, 400, none);
+  color: $white;
 }
 .hero__main-img {
   position: absolute;
