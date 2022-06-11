@@ -14,6 +14,7 @@
   visibility: visible;
   pointer-events: initial;
   transition: opacity 250ms ease-in, visibility 250ms ease-in;
+  z-index: 10;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -187,6 +188,7 @@
   left: 0;
   transform: translate(-20%, -50%) rotate(0);
   transition: transform 300ms linear;
+  fill: #3f3e3e;
 
   .policy__agreement:checked + .modal__label .policy__check & {
     transform: translate(100%, -50%) rotate(-2turn);
