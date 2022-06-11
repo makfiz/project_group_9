@@ -1,0 +1,80 @@
+
+.section-gallery{
+    width: 100%;
+   
+    padding-bottom: 120px;
+    @media screen and (min-width: 320px) {
+        .section-gallery {
+        
+            background-image: linear-gradient(180deg,#fff5f6 0,#fff5f6 21%,#fff 0,#fff);
+        }
+      }
+    background-image: linear-gradient(180deg,#fff5f6 0,#fff5f6 27%,#fff 0,#fff);
+    @media screen and (min-width: 768px) {
+        .section-gallery {
+        
+            background-image: linear-gradient(180deg,#fff5f6 0,#fff5f6 27%,#fff 0,#fff);
+        }
+      }
+      @media screen and (min-width: 1280px) {
+        .section-gallery {
+           
+            background-image: linear-gradient(180deg,#fff5f6 0,#fff5f6 40%,#fff 0,#fff);
+        }
+      }
+
+
+
+}
+    
+
+    .grid {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . . . pic-4 pic-4 pic-4 pic-4 . . pic-8 pic-8 . ."
+          ". . pic-2 pic-2 pic-4 pic-4 pic-4 pic-4 pic-6 pic-6 pic-8 pic-8 . ."
+          "pic-1 pic-1 pic-2 pic-2 pic-4 pic-4 pic-4 pic-4 pic-6 pic-6 pic-9 pic-9 pic-10 pic-10"
+          "pic-1 pic-1 pic-3 pic-3 pic-4 pic-4 pic-4 pic-4 pic-7 pic-7 pic-9 pic-9 pic-10 pic-10"
+          ". . pic-3 pic-3 pic-5 pic-5 . . pic-7 pic-7 . . . ."
+          ". . . . pic-5 pic-5 . . . . . . . .";
+          
+      }
+      
+      .pic-5 { grid-area: pic-5; }
+      
+      .pic-4 { grid-area: pic-4; }
+      
+      .pic-1 { grid-area: pic-1; }
+      
+      .pic-2 { grid-area: pic-2; }
+      
+      .pic-3 { grid-area: pic-3; }
+      
+      .pic-6 { grid-area: pic-6; }
+      
+      .pic-7 { grid-area: pic-7; }
+      
+      .pic-8 { grid-area: pic-8; }
+      
+      .pic-9 { grid-area: pic-9; }
+      
+      .pic-10 { grid-area: pic-10; }
+      
+.gallery-image{
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    transition: transform;
+    transition-duration: 1.2s;
+    transition-timing-function: cubic-bezier(.2,1.06,.56,1.01);
+}
+.gallery-image:hover{
+    transform: scale(1.2);
+}
+
