@@ -128,11 +128,17 @@
   box-shadow: 0px 4px 13px -6px rgba(0, 0, 0, 0.89);
   outline: none;
   caret-color: $red;
-  @include font(14px, 1.15, null, null);
+  @include font(14px, 1.15, 400, 0.04);
+  color: #3f3e3e;
   transition: border-color 250ms ease-in;
 
   &:focus {
     border-color: #0c8bbd;
+  }
+
+  &::placeholder {
+    @include font(12px, 1.15, 400, 0.04);
+    color: #3f3e3e;
   }
 }
 
@@ -147,7 +153,7 @@
 
   transition: transform 250ms ease-in;
 
-  .modal__input:not(:placeholder-shown) + & {
+  .modal__input:valid + & {
     transform: translateY(-185%);
   }
 }
