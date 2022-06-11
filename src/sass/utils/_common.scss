@@ -2,12 +2,8 @@
 
 body {
   font-family: 'DM Sans';
-
-  @media screen and (max-width:319px) {
-    overflow-x: scroll;
-    
-  }
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -18,6 +14,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 0px 20px;
+  
   
 
   @include tablet {
