@@ -1,4 +1,4 @@
-<div class="backdrop">
+<div class="backdrop is-hidden">
   <div class="modal">
     <div class="container">
       <button type="button" class="modal__btn--cross">
@@ -18,27 +18,78 @@
               placeholder=" "
             />
             <span class="modal__icon">
-              <svg class="modal__pic" width="20" height="20">
+              <svg class="modal__pic" width="15" height="15">
                 <use href="./images/sprite.svg#icon-user"></use>
               </svg>
-              <svg class="modal__checkmark" width="20" height="20">
+              <svg class="modal__checkmark" width="15" height="15">
                 <use href="./images/sprite.svg#icon-checkmark"></use>
               </svg>
             </span>
           </span>
         </label>
         <label class="modal__label">
-          <input
-            type="email"
-            class="modal__input"
-            name="email"
-            placeholder=" "
-          />
+          <span class="modal__text">Email</span>
+          <span class="modal__wrap">
+            <input
+              type="email"
+              class="modal__input"
+              name="email"
+              placeholder=" "
+            />
+            <span class="modal__icon">
+              <svg class="modal__pic" width="15" height="15">
+                <use href="./images/sprite.svg#icon-envelop"></use>
+              </svg>
+              <svg class="modal__checkmark" width="15" height="15">
+                <use href="./images/sprite.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+          </span>
         </label>
         <label class="modal__label">
-          <input type="tel" class="modal__input" name="tel" placeholder=" " />
+          <span class="modal__text">Phone</span>
+          <span class="modal__wrap">
+            <input type="tel" class="modal__input" name="tel" placeholder=" " />
+            <span class="modal__icon">
+              <svg class="modal__pic" width="15" height="15">
+                <use href="./images/sprite.svg#icon-mobile"></use>
+              </svg>
+              <svg class="modal__checkmark" width="15" height="15">
+                <use href="./images/sprite.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+          </span>
+        </label>
+        <label class="modal__label">
+          <span class="modal__text">Your comment</span>
+          <textarea
+            class="modal__input modal__comment"
+            name="comment"
+          ></textarea>
         </label>
       </form>
+      <div class="policy">
+        <input
+          id="checkbox"
+          type="checkbox"
+          name="policy__agreement"
+          class="policy__agreement visually-hidden"
+        />
+        <label class="modal__label policy__label" for="checkbox">
+          <span class="policy__check">
+            <svg class="policy__svg" width="20" height="20">
+              <use href="./images/sprite.svg#icon-cog"></use>
+            </svg>
+          </span>
+          <span class="policy__inner">
+            <span class="policy__text"
+              >Approve our <a href="#" class="policy__link">policy</a></span
+            >
+            <span class="policy__greetings">Awesome!</span>
+          </span>
+        </label>
+        <button type="submit" class="btn btn--red modal__btn">Confirm</button>
+      </div>
     </div>
   </div>
 </div>
