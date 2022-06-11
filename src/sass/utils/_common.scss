@@ -2,6 +2,11 @@
 
 body {
   font-family: 'DM Sans';
+
+  @media screen and (max-width:319px) {
+    overflow-x: scroll;
+    
+  }
 }
 img {
   display: block;
