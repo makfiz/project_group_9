@@ -138,7 +138,7 @@
 
   &::placeholder {
     @include font(12px, 1.15, 400, 0.04);
-    color: #3f3e3e;
+    color: rgba(63, 62, 62, 0.5);
   }
 }
 
