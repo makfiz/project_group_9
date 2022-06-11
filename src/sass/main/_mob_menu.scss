@@ -27,6 +27,11 @@
     pointer-events: all;
 }
 
+.is-hidden {
+  opacity: 0.25;
+}
+
+
 .mob-menu__button {
     display: flex;
    margin-left: auto;
@@ -35,7 +40,7 @@
     padding: 0px;
 
     @include tablet {
-           margin-left: 182px;
+           margin-left: 165px;
         }
 }
 
