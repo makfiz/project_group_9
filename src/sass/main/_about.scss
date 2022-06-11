@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
+
+
+.about{
+    background-color: #FFF5F6;
+    padding-top: 40px;
+
+    @include tablet {
+        padding-top: 20px;
+    }
+    @include desktop {
+        padding-top: 60px;
+    }
+  
+}
+
+.about__subtitle{
+    font-family: Titan One, sans-serif;
+    @include font (18px, 1.17, 400, 0);
+    color: #FFA5BA;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @include tablet {
+            @include font (26px, 1.15, 400, 0);
+        }
+
+         @include desktop {
+            @include font (30px, 1.13, 400, 0);
+         }
+}
+
+.about__title {
+    font-family: Titan One, sans-serif;
+    @include font (34px, 1.15, 400, 0);
+    color: #D41443;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include tablet {
+            @include font (48px, 1.15, 400, 0);
+            margin-bottom: 40px;
+        }
+
+                 @include desktop {
+                     @include font (58px, 1.14, 400, 0);
+                   
+                 }
+}
+
+
+.about__img {
+    @media screen and (max-width:767px) {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+                @include desktop {
+                    margin-top: 60px;
+                }
+    
+}
+
+
+
+.about__textwrap{
+    @media screen and (max-width: 1279px) {
+
+    background-image: url(../images/about/about-backmob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 40px;
+
+@media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx) {
+    background-image: url(../images/about/about-backmod@2x.png);
+    }}
+                  @include tablet {
+                      width: 334px;
+                      margin-left: 32px;
+                  }
+
+                                   @include desktop {
+                                       width: 463px;
+                                       margin-left: 139px;
+                                       margin-top: 151px;
+                                   }
+}
+
+.about__wrap {
+    @include tablet {
+            display: flex;
+            align-items: center;
+
+            @include desktop {
+                background-image: url(../images/about/about-background.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            
+                @media (min-device-pixel-ratio:2),
+                (min-resolution:192dpi),
+                (min-resolution:2dppx) {
+                    background-image: url(../images/about/about-background@2x.png);
+                }
+    }}}
+
+.about__top-text {
+    @include font (12px, 1.58, 500, 0);
+    color: #000000;
+    margin-bottom: 20px;
+    min-width: 220px;
+
+    @include tablet {
+            margin-bottom: 32px;
+            @include font (14px, 1.79, 500, 0);
+        }
+@include desktop {
+    
+    @include font (16px, 1.75, 500, 0);
+}
+}
+
+.about__text {
+    @include font (12px, 1.58, 500, 0);
+    color: #907E82;
+    margin-bottom: 20px;
+    min-width: 220px;
+    @include tablet {
+           
+            @include font (14px, 1.79, 500, 0);
+        }
+
+         @include tablet {
+    
+             @include font (14px, 1.93, 500, 0);
+         }
+    
+}
+
+.about__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    min-height: 44px;
+    
+    @include font(14px, 1.29, 700, 0);
+    
+    @include tablet {
+            margin-top: 46px;
+            @include font(16px, 1.31, 700, 0);
+        }
+}
+
+.about-btn__icon {
+    margin-left: 13px;
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+}
