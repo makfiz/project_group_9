@@ -2,7 +2,9 @@
 
 body {
   font-family: 'DM Sans';
+  min-width: 319px;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -13,6 +15,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 0px 20px;
+  
+  
 
   @include tablet {
     padding: 0px 32px;
