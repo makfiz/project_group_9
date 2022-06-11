@@ -14,8 +14,9 @@
   visibility: visible;
   pointer-events: initial;
   transition: opacity 250ms ease-in, visibility 250ms ease-in;
+  z-index: 10;
 }
-.backdrop.is-hidden {
+.backdrop.is-transparent {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -42,7 +43,7 @@
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
 }
-.backdrop.is-hidden .modal {
+.backdrop.is-transparent .modal {
   opacity: 0.5;
   transform: translate(-50%, -50%) scale(0.7);
 }
@@ -187,6 +188,7 @@
   left: 0;
   transform: translate(-20%, -50%) rotate(0);
   transition: transform 300ms linear;
+  fill: #3f3e3e;
 
   .policy__agreement:checked + .modal__label .policy__check & {
     transform: translate(100%, -50%) rotate(-2turn);
