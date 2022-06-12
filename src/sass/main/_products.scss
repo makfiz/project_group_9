@@ -1,21 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap');
+
+.products {
+    padding-top: 40px;
+
+    @include tablet {
+        padding-top: 20px;
+    }
+
+    @include desktop {
+        padding-top: 30px;
+    }
+}
 
 .prod {
     margin: 0px auto 148px auto;
-    padding-top: 80px;
+    
     text-align: center;
     font-family: 'Titan One', sans-serif;
     text-transform: uppercase;
 
     @include tablet {
         margin: 0px auto 128px auto;
-        padding-top: 45px;
-
     }
 
     @include desktop {
         margin: 0px auto 198px auto;
-        padding-top: 59px;
     }
 }
 
