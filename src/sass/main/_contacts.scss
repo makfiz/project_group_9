@@ -193,17 +193,17 @@
   top: 50%;
   left: 50%;
 
-  width: 430px;
+  width: 420px;
   max-width: 100%;
-  height: 500px;
+  height: 485px;
   max-height: 100%;
-  padding: 60px 40px;
+  padding: 60px 40px 40px 40px;
   overflow: auto;
   z-index: 30;
 
   @include desktop {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 480px;
   }
 
   background-color: #fff5f6;
@@ -240,11 +240,12 @@
 }
 
 .franchise-modal__title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.76;
-  letter-spacing: 0.04em;
-  color: #000000;
+  text-transform: uppercase;
+  font-family: 'Titan One';
+  font-style: normal;
+
+  @include font(20px, 1.15, 400, 0.04);
+  color: #d41443;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -284,6 +285,9 @@
 
 .franchise-form__field:focus-within .franchise-form__input {
   border: 1px solid #c7133e;
+}
+.franchise-form__field:focus-within .franchise-form__label {
+  color: #c7133e;
 }
 .no-scroll {
   height: 100vh;
