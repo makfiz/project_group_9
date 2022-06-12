@@ -3,24 +3,17 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(57, 40, 45, 0.3);
         transform: scale(20%);
         pointer-events: none;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 555ms cubic-bezier(0.4, 0, 0.2, 1);
         visibility: hidden;
     }
 
-.backdrop-read.is_hidden .modal-read {
-    transform: scale(1) translateY(0);
-    transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-
-
-
 .modal-read {
-        width: 290px;
+        min-width: 270px;
         min-height: 449px;
-        background-color:#FFF5F6 ;
+        background-color: #FFF5F6;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -28,10 +21,63 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
         transform: translate(-50%, -50%) rotate(0);
         padding: 30px;
-}
+        background-image: linear-gradient(rgba(197, 152, 164, 0.4),
+                rgba(255, 234, 247, 0.4)),
+        url(../images/about/about-mob.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media (min-device-pixel-ratio:2),
+               (min-resolution:192dpi),
+               (min-resolution:2dppx) {
+                background-image: linear-gradient(rgba(255, 234, 247, 0.5),
+                        rgba(255, 234, 247, 0.5)),
+                url(../images/about/about-mob@2x.png);
+                }
+
+                    @include tablet {
+                            width: 500px;
+                            min-height: 509px;
+                            padding: 40px;
+                            background-image: linear-gradient(rgba(197, 152, 164, 0.4),
+                                        rgba(255, 234, 247, 0.4)),
+                                    url(../images/about/about-tab.png);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            
+                                @media (min-device-pixel-ratio:2),
+                                (min-resolution:192dpi),
+                                (min-resolution:2dppx) {
+                                    background-image: linear-gradient(rgba(255, 234, 247, 0.5),
+                                            rgba(255, 234, 247, 0.5)),
+                                        url(../images/about/about-tab@2x.png);
+                                }
+                                                  }
+                
+                    @include desktop {
+                            width: 628px;
+                            min-height: 728px;
+                            background-image: linear-gradient(rgba(197, 152, 164, 0.4),
+                                        rgba(255, 234, 247, 0.4)),
+                                    url(../images/about/about-desktop.png);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            
+                                @media (min-device-pixel-ratio:2),
+                                (min-resolution:192dpi),
+                                (min-resolution:2dppx) {
+                                    background-image: linear-gradient(rgba(255, 234, 247, 0.5),
+                                            rgba(255, 234, 247, 0.5)),
+                                        url(../images/about/about-desktop@2x.png);
+                                }
+                                 }
+            }
+        
+           
 
 .icon__close {
     width: 18px;
@@ -61,4 +107,61 @@
     visibility: visible;
     transform: scale(100%);
     pointer-events: all;
+}
+
+.about-read__subtitle {
+        font-family: Titan One, sans-serif;
+        @include font (16px, 1.17, 400, 0);
+        color: #f9819d;
+        text-transform: uppercase;
+        text-align: center;
+        
+    
+        @include tablet {
+            @include font (22px, 1.15, 400, 0);
+        }
+    
+        @include desktop {
+            @include font (26px, 1.13, 400, 0);
+        }
+    }
+
+.about-read__title {
+    font-family: Titan One, sans-serif;
+    @include font (22px, 1.15, 400, 0);
+    color: #D41443;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @include tablet {
+        @include font (38px, 1.15, 400, 0);
+        margin-bottom: 40px;
+    }
+
+    @include desktop {
+        @include font (48px, 1.14, 400, 0);
+
+    }
+
+}
+
+.about-read__text {
+    @include font (14px, 1.58, 500, 0);
+    color: #000000;
+    margin-bottom: 10px;
+    min-width: 220px;
+
+    @include tablet {
+
+        @include font (16px, 1.79, 500, 0);
+        margin-bottom: 20px;
+    }
+
+    @include desktop {
+
+        @include font (20px, 1.93, 500, 0);
+        margin-bottom: 25px;
+    }
+
 }
