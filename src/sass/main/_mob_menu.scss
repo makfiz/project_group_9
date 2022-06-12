@@ -70,7 +70,6 @@
 .mob-menu-nav {
     display: flex;
     flex-direction: column;
-    row-gap: 23px;
 }
 
 .mob-nav__item {
@@ -87,7 +86,7 @@
 }
 
 
-.mob-nav__item:nth-child(1n) {
+.mob-nav__item:nth-child(2n +1) {
     &::after, &::before {
         content: " ";
         position: absolute;
