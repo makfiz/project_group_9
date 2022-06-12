@@ -1,7 +1,7 @@
 footer {
     position: relative;
     background-color: #FFF5F6;
-
+    padding-top: 48px;
     &::after {
         content: " ";
         position: absolute;
@@ -14,7 +14,13 @@ footer {
            bottom: 38px;
         }
     }
+        @include tablet {
+            padding-top: 20px;
+        }
 
+        @include desktop {
+            padding-top: 60px;
+        }
 
 }
 

@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('.mob-menu');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const hideHeaderBtn = document.querySelector('.header-btn');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -9,6 +10,7 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
     openMenuBtn.classList.toggle('is-hidden');
+    hideHeaderBtn.classList.toggle('is-hidden');
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);

@@ -266,6 +266,7 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include tablet {
         top: 92%;
@@ -275,5 +276,9 @@
         top: 93%;
     }
 
-
+&:hover,
+&:focus {
+    border: 5px solid #ecebeb;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+}
 }
