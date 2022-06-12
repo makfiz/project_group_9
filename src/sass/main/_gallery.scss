@@ -74,7 +74,7 @@
     transition-duration: 1.2s;
     transition-timing-function: cubic-bezier(.2,1.06,.56,1.01);
 }
-.gallery-image:hover{
+.gallery-image:hover,.gallery-image:focus {
     transform: scale(1.2);
 }
 
