@@ -77,6 +77,8 @@
         background-color: #c2e297;
     }
 
+
+
     @include tablet {
         width: calc(100% / 3 - 11px);
         height: 473px;
@@ -193,6 +195,13 @@
             width: 394px;
             height: 394px;
         }
+    }
+}
+
+.products + .products {
+    @include mobile {
+        margin-top: 140px;
+       
     }
 }
 
