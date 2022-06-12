@@ -124,7 +124,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
   height: 24px;
   &:first-child {
     margin-right: 8px;
@@ -149,11 +149,15 @@
 }
 .hero-nav__link {
   @include font(8px, 1.25, 400, none);
+  padding: 7px 13px;
+  display: block;
   color: inherit;
   @include desktop {
     @include font(14px, 1.28, 400, none);
+    padding: 11px 18px;
   }
 }
+
 .hero-content__list {
   margin-right: 10px;
   margin-top: -10px;
