@@ -67,34 +67,20 @@
 
     &:first-child {
         background-color: #ffb8ca;
-
-        @media screen and (max-width:767px) {
-            margin-bottom: 140px;
-        }
-
     }
 
     &:nth-child(2) {
         background-color: #f0d1a5;
-
-        @media screen and (max-width:767px) {
-            margin-bottom: 140px;
-        }
     }
 
     &:last-child {
         background-color: #c2e297;
-
-        @media screen and (max-width:767px) {
-            margin-bottom: 40px;
-        }
     }
 
     @include tablet {
         width: calc(100% / 3 - 11px);
         height: 473px;
         display: inline-block;
-        margin-bottom: 60px;
 
         &:not(:last-child) {
             margin-right: 11px;
@@ -105,7 +91,6 @@
         width: calc(100% / 12 * 4 - 21px);
         height: 535px;
         display: inline-block;
-        margin-bottom: 60px;
 
         &:not(:last-child) {
             margin-right: 26px;
