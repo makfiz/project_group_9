@@ -10,6 +10,7 @@
     }
     @include desktop {
         padding-top: 60px;
+        padding-bottom: 99px;
     }
   
 }
@@ -156,6 +157,7 @@
             margin-top: 46px;
             @include font(16px, 1.31, 700, 0);
         }
+       
 }
 
 .about-btn__icon {
