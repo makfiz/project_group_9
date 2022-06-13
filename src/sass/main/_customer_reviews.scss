@@ -54,20 +54,35 @@
 .quote__text {
         line-height: 186%;
         letter-spacing: 0.04em;
+        padding-top: 47px;
+        padding-right: 142px;
+        padding-bottom: 39px;
+        padding-left: 142px;
+        background-color: #FAFAFA;
+         margin-top: 16px;   
 }
-
+.slider__quote{
+&::after{
+display: flex;
+    content: url(../images/customer-reviews/3-circle.svg);
+    position: relative;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}}
 .slider__down-text {}
 
 .slider {
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px;
+    max-width: 1034px;
+    max-height: 338px;
     overflow: hidden;
     position: relative;
 }
 
 .slider__wrapper {
-    background-color: #eee;
+    
     overflow: hidden;
     position: relative;
 }
@@ -167,7 +182,7 @@
         }
 
         .slider__indicator_active {
-            background-color: #fff;
+            background: url(../images/customer-reviews/home 1.svg);
         }
 
 
