@@ -33,6 +33,21 @@
   pointer-events: none;
 }
 
+.mob-menu-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 313px;
+  height: 57vh;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
 .mob-menu__button {
   display: flex;
   margin-left: auto;
@@ -42,7 +57,7 @@
 }
 
 .mob-menu__btn {
-  margin: 16px 0px 33px 14px;
+  margin: 0px 0px 0px 14px;
   min-height: 44px;
 
   @include mobile {
@@ -67,12 +82,17 @@
 .mob-menu-nav {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  max-height: 208px;
+  height: 50vh;
 }
 
 .mob-nav__item {
   position: relative;
-  padding-top: 11px;
-  padding-bottom: 12px;
+  max-height: 42px;
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
 }
 
 .mob-nav__item:nth-child(2n + 1) {
