@@ -1,15 +1,11 @@
 
 .customer_reviews{
-    padding-bottom: 8px;
+    padding-bottom: 24px;
     @include tablet{
         padding-bottom: 80px;
     }
 }
 
-/* стили для элемента body */
-
-
-/* дополнительные стили для этого примера */
 .slider__items {
     counter-reset: slide;
 }
@@ -52,23 +48,20 @@
             padding-right: 58px;
             padding-bottom: 35px;
             padding-left: 65px;
+            background: repeating-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 27px, #E1E1E1 27px, #E1E1E1 28px, rgba(0, 0, 0, 0) 28px, rgba(0, 0, 0, 0) 30px);
         background-color: #FAFAFA;
+        
+        
          margin-top: 16px;
            @include tablet{
-            /* background-image: url(../images/customer-reviews/Group\ 45.svg);
-            background-repeat: no-repeat;
-                background-position-y: 20px;
-                background-position-x: 6px; */
+          
                 padding-top: 37px;
                 padding-right: 55px;
                 padding-bottom: 44px;
                 padding-left: 50px;
          }
           @include desktop{
-          /*  background-image: url(../images/customer-reviews/Group\ 44.svg);
-                background-repeat: no-repeat;
-                background-position-y: 32px;
-                background-position-x: 105px;*/ 
+          
                 padding-top: 47px;
                 padding-right: 142px;
                 padding-bottom: 39px;
@@ -88,7 +81,23 @@ display: flex;
 .slider__down-text {
     
 }
-
+.slider__quote{
+    &::before{
+        content: url(../images/customer-reviews/quote.svg);
+        display: flex;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 53px;
+        @include tablet{
+        margin-top: 20px;
+        margin-left: 6px;
+        }
+        @include desktop{
+            margin-top: 32px;
+                margin-left: 105px;
+        }
+    }
+}
 .slider {
     margin-left: auto;
     margin-right: auto;
@@ -118,59 +127,6 @@ display: flex;
     
     position: relative;
 }
-
-/* .slider__control {
-    align-items: center;
-    background: rgba(0, 0, 0, .3);
-    color: #fff;
-    display: none;
-    height: 50px;
-    justify-content: center;
-    opacity: .5;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    user-select: none;
-    width: 40px;
-}
-
-.slider__control_show {
-    display: flex;
-}
-
-.slider__control:focus,
-.slider__control:hover {
-    color: #fff;
-    opacity: .7;
-    text-decoration: none;
-}
-
-.slider__control_prev {
-    left: 0;
-}
-
-.slider__control_next {
-    right: 0;
-} */
-
-/* .slider__control::before {
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
-    content: '';
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-}
-
-.slider__control_prev::before {
-    background-image: url("data:image/svg+xml;xmlns='http: //www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8' %3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z' /%3E%3C/svg%3E");
-
-    }
-
-    .slider__control_next::before {
-        background-image: url("data:image/svg+xml;xmlns='http: //www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8' %3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z' /%3E%3C/svg%3E");
-
-        } */
 
         .slider__indicators {
             display: flex;
