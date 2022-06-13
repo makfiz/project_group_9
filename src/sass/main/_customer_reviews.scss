@@ -204,9 +204,9 @@ display: flex;
 
         .slider__indicator_active {
             background-image: url(../images/customer-reviews/home\ 1.svg);
-            display: flex;
-            justify-self: center;
-            align-self: center;
+            border: none;
+            background-color: #ffffff;
+            background-repeat: no-repeat;
         }
 
 
