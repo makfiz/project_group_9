@@ -1,3 +1,39 @@
 <section>
+    <!-- Подключаем CSS слайдера -->
+        <link rel="stylesheet" href="https://itchief.ru/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.css">
+        <!-- Подключаем JS слайдера -->
+            <script defer src="https://itchief.ru/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.js">
+            </script>
+            <script>document.addEventListener('DOMContentLoaded', function () {
 
+                    // инициализация слайдера
+                    var slider = new SimpleAdaptiveSlider('.slider', {
+                        loop: false,
+                        autoplay: false,
+                        interval: 5000,
+                        swipe: true,
+                    });
+                });
+            </script>
+<!-- Разметка слайдера -->
+<div class="slider">
+    <div class="slider__wrapper">
+        <div class="slider__items">
+            <div class="slider__item">
+                <div style="height: 250px; background: #3f51b5;"></div>
+            </div>
+            <div class="slider__item">
+                <div style="height: 250px; background: #607d8b;"></div>
+            </div>
+            <div class="slider__item">
+                <div style="height: 250px; background: #f44336;"></div>
+            </div>
+            <div class="slider__item">
+                <div style="height: 250px; background: #4caf50;"></div>
+            </div>
+        </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+</div>
 </section>
