@@ -1,3 +1,72 @@
 <section>
 
+    <!-- Подключаем JS слайдера -->
+    <script defer src="https://itchief.ru/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.js">
+    </script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+
+            // инициализация слайдера
+            var slider = new SimpleAdaptiveSlider('.slider', {
+                loop: true,
+                autoplay: false,
+                interval: 5000,
+                swipe: true,
+
+            });
+        });
+    </script>
+    <!-- Разметка слайдера -->
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <div class="slider__img">
+                        <source srcset="/src/images/customer-reviews/slider-pic1-1x.png 1x,
+                                /src/images/customer-reviews/slider-pic1-2x.png" media="(min-width:1200px)">
+                        <img class="" src="/src/images/customer-reviews/slider-pic1-1x.png"
+                            alt="фото человека который написал отзыв">
+                    </div>
+                    <div class="slider__quote">
+                        <p class="quote__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+                            sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                        </p>
+
+                    </div>
+                    <p class="slider__down-text">Emily, Los Angeles</p>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__img">
+                        <source srcset="/src/images/customer-reviews/slider-pic2-1x.png 1x,
+                                /src/images/customer-reviews/slider-pic2-2x.png" media="(min-width:1200px)">
+                        <img class="" src="/src/images/customer-reviews/slider-pic2-1x.png"
+                            alt="фото человека который написал отзыв">
+                    </div>
+                    <div class="slider__quote">
+                        <p class="quote__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+                            sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                        </p>
+
+                    </div>
+                    <p class="slider__down-text">Emily, Los Angeles</p>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__img">
+                        <source srcset="/src/images/customer-reviews/slider-pic3-1x.png 1x,
+                                /src/images/customer-reviews/slider-pic2-2x.png" media="(min-width:1200px)">
+                        <img class="" src="/src/images/customer-reviews/slider-pic3-1x.png"
+                            alt="фото человека который написал отзыв">
+                    </div>
+                    <div class="slider__quote">
+                        <p class="quote__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+                            sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                        </p>
+
+                    </div>
+                    <p class="slider__down-text">Emily, Los Angeles</p>
+                </div>
+            </div>
+        </div>
+        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+    </div>
 </section>
