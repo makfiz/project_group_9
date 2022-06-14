@@ -10,7 +10,6 @@
   refs.closeHeroReadmoreBtn.addEventListener('click', toggleReadMore);
 
   function toggleReadMore() {
-    refs.HeroReadmore.classList.toggle('visually-hidden');
     refs.HeroReadmore.classList.toggle('hero-readmore--open');
     refs.HeroReadmore.classList.toggle('hero-readmore--close');
   }
