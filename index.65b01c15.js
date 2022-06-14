@@ -1,0 +1,2 @@
+!function(){var e={openHeroReadmoreBtn:document.querySelector("[data-hero-readmore-open]"),closeHeroReadmoreBtn:document.querySelector("[data-hero-readmore-close]"),HeroReadmore:document.querySelector("[data-hero-readmore]"),body:document.querySelector("body")};function o(){e.HeroReadmore.classList.toggle("hero-readmore--open"),e.HeroReadmore.classList.toggle("hero-readmore--close")}e.openHeroReadmoreBtn.addEventListener("click",o),e.closeHeroReadmoreBtn.addEventListener("click",o)}();
+//# sourceMappingURL=index.65b01c15.js.map
