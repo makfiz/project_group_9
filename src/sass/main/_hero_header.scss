@@ -331,14 +331,21 @@
   @include desktop {
     max-width: 420px;
   }
-  transition-duration: 4000ms;
-  // transition: transform 4000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 400ms;
 }
 .hero-readmore--open {
   transform: translateX(0) translateY(0) scale(100%);
+  visibility: visible;
 }
 .hero-readmore--close {
   transform: translateX(5%) translateY(30%) scale(5%);
+  visibility: hidden;
+  position: absolute;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  overflow: hidden;
 }
 .hero-readmore__btn {
   transform: rotate(180deg);
