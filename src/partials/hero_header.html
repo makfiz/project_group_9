@@ -53,17 +53,17 @@
       <div class="hero__wrap">
         <div class="hero-main">
           <h1 class="hero-main__title">
-            ice cream&nbsp; made with
+            ice cream made with
             <span class="hero-main__title--red">passion</span>
           </h1>
           <nav class="hero-nav nav">
             <ul class="hero-nav__list">
-              <li class="hero-nav__item btn--red">
+              <li class="hero-nav__item">
                 <a href="#products" class="hero-nav__link" id="Products"
                   >Products</a
                 >
               </li>
-              <li class="hero-nav__item btn--light">
+              <li class="hero-nav__item">
                 <a href="#about-us" class="hero-nav__link" id="how-it-made"
                   >How it’s made?</a
                 >
@@ -128,7 +128,28 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <button class="hero-aside__btn" type="button">
+          <button class="hero-aside__btn" type="button" data-hero-readmore-open>
+            <svg class="hero-aside__icon">
+              <use href="./images/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hero-readmore visually-hidden hero-readmore--close"
+          data-hero-readmore
+        >
+          <p class="hero-readmore__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+            enim, ipsam fugit unde ad totam optio doloremque porro architecto
+            ipsa sequi tempora culpa, assumenda earum, magnam commodi nam
+            officia? Rerum laborum autem sed voluptas ipsam accusantium qui
+            unde, voluptatem enim.
+          </p>
+          <button
+            class="hero-aside__btn hero-readmore__btn"
+            type="button"
+            data-hero-readmore-close
+          >
             <svg class="hero-aside__icon">
               <use href="./images/sprite.svg#icon-arrow-right"></use>
             </svg>

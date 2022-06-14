@@ -122,7 +122,6 @@
             @include font (14px, 1.79, 500, 0);
         }
 @include desktop {
-    
     @include font (16px, 1.75, 500, 0);
 }
 }
@@ -133,13 +132,11 @@
     margin-bottom: 20px;
     min-width: 220px;
     @include tablet {
-           
-            @include font (14px, 1.79, 500, 0);
+        @include font (14px, 1.79, 500, 0);
         }
 
-         @include tablet {
-    
-             @include font (14px, 1.93, 500, 0);
+    @include desktop {
+        @include font (14px, 1.93, 500, 0);
          }
     
 }
@@ -150,7 +147,6 @@
     align-items: center;
     min-width: 180px;
     min-height: 44px;
-    
     @include font(14px, 1.29, 700, 0);
     
     @include tablet {
