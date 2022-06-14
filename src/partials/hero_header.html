@@ -128,7 +128,28 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <button class="hero-aside__btn" type="button">
+          <button class="hero-aside__btn" type="button" data-hero-readmore-open>
+            <svg class="hero-aside__icon">
+              <use href="./images/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hero-readmore visually-hidden hero-readmore--close"
+          data-hero-readmore
+        >
+          <p class="hero-readmore__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+            enim, ipsam fugit unde ad totam optio doloremque porro architecto
+            ipsa sequi tempora culpa, assumenda earum, magnam commodi nam
+            officia? Rerum laborum autem sed voluptas ipsam accusantium qui
+            unde, voluptatem enim.
+          </p>
+          <button
+            class="hero-aside__btn hero-readmore__btn"
+            type="button"
+            data-hero-readmore-close
+          >
             <svg class="hero-aside__icon">
               <use href="./images/sprite.svg#icon-arrow-right"></use>
             </svg>
