@@ -328,8 +328,13 @@
     padding: 20px;
     
     p {
-        color: #D41443;
-        text-align: center;
+    color: #FFB8CA;
+    text-align: center;
+    @include font (14px, 1.5, 700, 0.04);
+
+    @include desktop {
+        @include font (16px, 1.76, 700, 0.04);
+        }
     }
     
 }
