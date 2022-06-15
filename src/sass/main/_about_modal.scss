@@ -95,6 +95,7 @@
 }
 
  .read-mod__btn {
+    display: flex;
      border-radius: 50%;
      background-color: transparent;
      border: 1px solid rgba(0, 0, 0, 0.1);
@@ -106,7 +107,17 @@
      align-items: center;
      text-align: center;
      padding: 0;
+
+     &:hover, &:focus {
+        border-color: #D41443;
+     }
  }
+
+    .read-mod__btn:hover .icon-close,
+    .read-mod__btn:focus .icon-close {
+        fill: #D41443;
+    }
+    
 
 .modal-is-open {
     visibility: visible;
@@ -170,3 +181,4 @@
     }
 
 }
+
