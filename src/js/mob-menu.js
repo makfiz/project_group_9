@@ -1,27 +1,20 @@
 (() => {
-  const mobileMenu = document.querySelector('.mob-menu');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
-  const hideHeaderBtn = document.querySelector('.header-btn');
-
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-    openMenuBtn.classList.toggle('is-hidden');
-    hideHeaderBtn.classList.toggle('is-hidden');
+  const refs = {
+    openMenuBtn: document.querySelector('[data-openMenuBtn]'),
+    closeMenuBtn: document.querySelector('[data-closeMenuBtn]'),
+    mobileMenu: document.querySelector('[data-mobileMenu]'),
+    hideHeaderBtn: document.querySelector('[data-hideHeaderBtn]'),
+    backdrop: document.querySelector('[data-backdrop]'),
   };
 
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.openMenuBtn.addEventListener('click', toggleModal1);
+  refs.closeMenuBtn.addEventListener('click', toggleModal1);
 
-  // Закрываем мобильное меню на более широких экранах
-  // в случае изменения ориентации устройства.
-  // window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-  //   if (!e.matches) return;
-  //   mobileMenu.classList.remove('is-open');
-  //   openMenuBtn.setAttribute('aria-expanded', false);
-  //   bodyScrollLock.enableBodyScroll(document.body);
-  // });
+  function toggleModal1() {
+    refs.mobileMenu.classList.toggle('is-open');
+    refs.backdrop.classList.toggle('is-transparent');
+    refs.openMenuBtn.classList.toggle('is-hidden');
+    refs.hideHeaderBtn.classList.toggle('is-hidden');
+  }
+
 })();
