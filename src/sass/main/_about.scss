@@ -4,15 +4,38 @@
 .about{
     background-color: #FFF5F6;
     padding-top: 40px;
-
+    background-image: url(../images/about/about-backmob.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    
+    
+        @media (min-device-pixel-ratio:2),
+        (min-resolution:192dpi),
+        (min-resolution:2dppx) {
+            background-image: url(../images/about/about-backmod@2x.png);
+        }
+   
     @include tablet {
         padding-top: 20px;
     }
     @include desktop {
         padding-top: 60px;
         padding-bottom: 99px;
+        background-image: url(../images/about/about-background.png);
+            background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right bottom;
+        
+        
+            @media (min-device-pixel-ratio:2),
+            (min-resolution:192dpi),
+            (min-resolution:2dppx) {
+                background-image: url(../images/about/about-background@2x.png);
+            }
+           
     }
-  
+
 }
 
 .about__subtitle{
@@ -67,19 +90,8 @@
 
 
 .about__textwrap{
-    @media screen and (max-width: 1279px) {
+     margin-top: 40px;
 
-    background-image: url(../images/about/about-backmob.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 40px;
-
-@media (min-device-pixel-ratio:2),
-    (min-resolution:192dpi),
-    (min-resolution:2dppx) {
-    background-image: url(../images/about/about-backmod@2x.png);
-    }}
                   @include tablet {
                       width: 334px;
                       margin-left: 32px;
@@ -95,21 +107,11 @@
 .about__wrap {
     @include tablet {
             display: flex;
-            align-items: center;
+            align-items: center;}
+    }
 
-            @include desktop {
-                background-image: url(../images/about/about-background.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                
-            
-                @media (min-device-pixel-ratio:2),
-                (min-resolution:192dpi),
-                (min-resolution:2dppx) {
-                    background-image: url(../images/about/about-background@2x.png);
-                }
-    }}}
+           
+
 
 .about__top-text {
     @include font (12px, 1.58, 500, 0);
